@@ -1,4 +1,4 @@
-package com.sbbank.accounts.entity;
+package com.sbbank.loans.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -15,8 +15,10 @@ import javax.persistence.MappedSuperclass;
 import java.time.LocalDateTime;
 
 @MappedSuperclass
-@Getter@Setter@ToString
-@EntityListeners(value = AuditingEntityListener.class)
+@Getter
+@Setter
+@ToString
+@EntityListeners(AuditingEntityListener.class)
 public class BaseEntity {
 
     @CreatedDate
