@@ -28,5 +28,28 @@ public class AccountController {
                 .body(new ResponseDto(AccountConstants.STATUS_201,AccountConstants.MESSAGE_201));
     }
 
+    @GetMapping(value="/fetch")
+    public ResponseEntity<CustomerDto> getCustomerByMobileNumber(@RequestParam String mobileNUmber){
+
+       CustomerDto customerDto = iAccountsService.getAccountByMobileNumber(mobileNUmber);
+
+       return ResponseEntity.status(HttpStatus.OK)
+               .body(customerDto);
+
+    }
+
+    @PutMapping(value ="/update")
+    public ResponseEntity<ResponseDto> updateCustomer(@RequestBody CustomerDto customerDto){
+       boolean isUpdated = iAccountsService.updateCustomer(customerDto);
+       if(isUpdated){
+           return ResponseEntity.status(HttpStatus.OK)
+                   .body(new ResponseDto(AccountConstants.STATUS_200,AccountConstants.MESSAGE_200));
+       }else{
+           return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
+                   .body(new ResponseDto(AccountConstants.STATUS_500,AccountConstants.MESSAGE_500));
+       }
+
+    }
+
 
 }
