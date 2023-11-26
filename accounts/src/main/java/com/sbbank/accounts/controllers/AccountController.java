@@ -1,15 +1,18 @@
 package com.sbbank.accounts.controllers;
 
 import com.sbbank.accounts.constants.AccountConstants;
-import com.sbbank.accounts.dto.AccountsDto;
-import com.sbbank.accounts.dto.CustomerDto;
-import com.sbbank.accounts.dto.ResponseDto;
+import com.sbbank.accounts.dto.*;
 import com.sbbank.accounts.service.IAccountsService;
 import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.core.env.Environment;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -21,12 +24,18 @@ import javax.validation.constraints.Pattern;
 
 @Tag(name = "Accounts Customer APIs",description = "CRUD Rest APIs to manage accounts and customers ")
 @RestController
-@RequestMapping(path = "/api", produces = {MediaType.APPLICATION_JSON_VALUE})
-@AllArgsConstructor
+@RequestMapping(path = "/api/v1", produces = {MediaType.APPLICATION_JSON_VALUE})
 @Validated
 public class AccountController {
 
-    private IAccountsService iAccountsService;
+    private final IAccountsService iAccountsService;
+
+    public AccountController(IAccountsService iAccountsService) {
+        this.iAccountsService = iAccountsService;
+    }
+
+
+
 
     @Operation(
             summary = "Create Customer & Account API",
@@ -118,6 +127,59 @@ public class AccountController {
                     .body(new ResponseDto(AccountConstants.STATUS_500, AccountConstants.MESSAGE_500));
         }
     }
+
+//    @Operation(
+//            summary = "Get Build information",
+//            description = "Get Build information that is deployed into accounts microservice"
+//    )
+//    @ApiResponses({
+//            @ApiResponse(
+//                    responseCode = "200",
+//                    description = "HTTP Status OK"
+//            ),
+//            @ApiResponse(
+//                    responseCode = "500",
+//                    description = "HTTP Status Internal Server Error",
+//                    content = @Content(
+//                            schema = @Schema(implementation = ErrorResponseDto.class)
+//                    )
+//            )
+//    }
+//    )
+//    @GetMapping("/build-info")
+//    public ResponseEntity<String> getBuildInfo() {
+//        return ResponseEntity
+//                .status(HttpStatus.OK)
+//                .body(buildVersion);
+//    }
+//
+//    @Operation(
+//            summary = "Get Java version",
+//            description = "Get Java versions details that is installed into accounts microservice"
+//    )
+//    @ApiResponses({
+//            @ApiResponse(
+//                    responseCode = "200",
+//                    description = "HTTP Status OK"
+//            ),
+//            @ApiResponse(
+//                    responseCode = "500",
+//                    description = "HTTP Status Internal Server Error",
+//                    content = @Content(
+//                            schema = @Schema(implementation = ErrorResponseDto.class)
+//                    )
+//            )
+//    }
+//    )
+//    @GetMapping("/java-version")
+//    public ResponseEntity<String> getJavaVersion() {
+//        return ResponseEntity
+//                .status(HttpStatus.OK)
+//                .body(environment.getProperty("JAVA_HOME"));
+//    }
+
+
+
 
 
 }

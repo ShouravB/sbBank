@@ -11,12 +11,13 @@ import javax.persistence.*;
 @ToString
 @AllArgsConstructor
 @NoArgsConstructor
-@Table
+
 public class Cards extends BaseEntity{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO,generator = "native")
     @GenericGenerator(strategy = "native",name = "native")
+
     private Long cardId;
 
     @Column(name = "mobile_number")

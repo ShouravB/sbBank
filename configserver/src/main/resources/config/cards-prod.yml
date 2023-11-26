@@ -1,0 +1,11 @@
+build:
+  version: "2.0"
+
+accounts:
+  message: "Welcome to sbBAnk cards related local APIs "
+  contactDetails:
+    name: "Selina Bhattarai -Owner"
+    email: "selina.bhattarai@gmail.com"
+  onCallSupport:
+    - (555) 555-1234
+    - (555) 523-1345
