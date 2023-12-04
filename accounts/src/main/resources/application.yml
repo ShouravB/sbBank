@@ -23,6 +23,29 @@ spring:
       circuitbreaker:
         enabled: true
 
+    function:
+      definition: updateCommunication
+
+    stream:
+      bindings:
+        updateCommunication-in-0:
+          destination: email-sms-sent
+          group: ${spring.application.name}
+        sendEmailSms-out-0:
+          destination: send-email-sms
+      kafka:
+        binder:
+          brokers: localhost
+          defaultBrokerPort: 9092
+          healthTimeout: 30
+          autoCreateTopics: true
+
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+#    connection-timeout: 10s
 
 
 #  config:
