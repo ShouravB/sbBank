@@ -5,26 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="630b91d6-b737-4c0c-9c63-d10b161f2054" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/sbbank/accounts/dto/AccountsMsgDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/accounts/src/main/java/com/sbbank/accounts/functions/AccountsMessageFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/sbBank/gatewayserver/config/KeyCloakRoleConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/sbBank/gatewayserver/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/src/main/java/com/sbbank/message/dto/AccountsMsgDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/message/src/main/java/com/sbbank/message/functions/MessageFunctions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8s/3_configserver.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/sbbank/accounts/entity/Accounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/sbbank/accounts/entity/Accounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/sbbank/accounts/service/IAccountsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/sbbank/accounts/service/IAccountsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/sbbank/accounts/service/impl/AccountsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/sbbank/accounts/service/impl/AccountsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose/common-config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/common-config.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/eurekaserver/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CardsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.sbbank.cards.CardsApplication" />
-      <module name="cards" />
+    <configuration name="ConfigserverApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.sbBank.configserver.ConfigserverApplication" />
+      <module name="configserver" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.sbbank.cards.*" />
+          <option name="PATTERN" value="com.sbBank.configserver.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -168,10 +164,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.GatewayserverApplication" />
-        <item itemvalue="Application.MessageApplication" />
         <item itemvalue="Application.EurekaserverApplication" />
+        <item itemvalue="Application.ConfigserverApplication" />
+        <item itemvalue="Application.MessageApplication" />
         <item itemvalue="Application.LoansApplication" />
-        <item itemvalue="Application.CardsApplication" />
       </list>
     </recent_temporary>
   </component>

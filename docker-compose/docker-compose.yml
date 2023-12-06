@@ -304,21 +304,23 @@ services:
       file: common-config.yml
       service: network-deploy-service
 
-#  configserver:
-#    image: "shourav1211/configserver:v1"
-#    container_name: sbBank-config-server
-#    restart: always
-#    ports:
-#      - "8071:8071"
-#    healthcheck:
-#      test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
-#      interval: 10s
-#      timeout: 5s
-#      retries: 10
-#      start_period: 10s
-#    extends:
-#      file: common-config.yml
-#      service: microservice-base-config
+  configserver:
+    image: "shourav1211/configserver:v1"
+    container_name: sbBank-config-server
+    restart: always
+    ports:
+      - "8071:8071"
+    healthcheck:
+      test: "curl --fail --silent localhost:8071/actuator/health/readiness | grep UP || exit 1"
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 10s
+    extends:
+      file: common-config.yml
+      service: microservice-base-config
+    environment:
+      OTEL_SERVICE_NAME: "configserver"
 
   eurekaserver:
     image: "shourav1211/eurekaserver:v1"
