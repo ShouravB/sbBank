@@ -2,6 +2,7 @@ package com.sbBank.gatewayserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.gateway.route.RouteLocator;
 import org.springframework.cloud.gateway.route.builder.RouteLocatorBuilder;
 import org.springframework.context.annotation.Bean;
@@ -9,6 +10,7 @@ import org.springframework.context.annotation.Bean;
 import java.time.LocalDateTime;
 
 @SpringBootApplication
+@EnableDiscoveryClient
 public class GatewayserverApplication {
 
 	public static void main(String[] args) {
@@ -26,17 +28,17 @@ public class GatewayserverApplication {
 										.setFallbackUri("forward:/contactSupport"))
 
 						)
-						.uri("lb://ACCOUNTS"))
+						.uri("http://accounts:8085"))
 				.route(p -> p
 						.path("/sbbank/loans/**")
 						.filters( f -> f.rewritePath("/sbbank/loans/(?<segment>.*)","/${segment}")
 								.addResponseHeader("X-Response-Time", LocalDateTime.now().toString()))
-						.uri("lb://LOANS"))
+						.uri("http://loans:8090"))
 				.route(p -> p
 						.path("/sbbank/cards/**")
 						.filters( f -> f.rewritePath("/sbbank/cards/(?<segment>.*)","/${segment}")
 								.addResponseHeader("X-Response-Time", LocalDateTime.now().toString()))
-						.uri("lb://CARDS")).build();
+						.uri("http://cards:8095")).build();
 
 
 	}

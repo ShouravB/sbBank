@@ -16,33 +16,42 @@ spring:
 
   cloud:
     gateway:
-      discovery:
-        locator:
-          enabled: true
+#      discovery:
+#        locator:
+#          enabled: true
 #          lowerCaseServiceId: true
       httpclient:
         connect-timeout: 1000
         response-timeout: 2s
-      routes[0]:
-        id: "ACCOUNTS"
-        uri: "lb://ACCOUNTS"
-        predicates[0]: "Path=/accounts/**"
-#        metadata:
-#          'cors':
-#            allowedOrigins: '*'
-#            allowedMethods:
-#              - GET
-#              - POST
-#            allowedHeaders: '*'
-#            maxAge: 30
-      routes[1]:
-        id: "LOANS"
-        uri: "lb://LOANS"
-        predicates[0]: "Path=/loans/**"
-      routes[2]:
-        id: "CARDS"
-        uri: "lb://CARDS"
-        predicates[0]: "Path=/cards/**"
+    kubernetes:
+      discovery:
+        enabled: true
+        all-namespaces: true
+
+    discovery:
+      client:
+        health-indicator:
+          enabled: false
+#      routes[0]:
+#        id: "ACCOUNTS"
+#        uri: "lb://ACCOUNTS"
+#        predicates[0]: "Path=/accounts/**"
+##        metadata:
+##          'cors':
+##            allowedOrigins: '*'
+##            allowedMethods:
+##              - GET
+##              - POST
+##            allowedHeaders: '*'
+##            maxAge: 30
+#      routes[1]:
+#        id: "LOANS"
+#        uri: "lb://LOANS"
+#        predicates[0]: "Path=/loans/**"
+#      routes[2]:
+#        id: "CARDS"
+#        uri: "lb://CARDS"
+#        predicates[0]: "Path=/cards/**"
 
 
 #  config:

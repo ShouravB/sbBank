@@ -4,7 +4,439 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="630b91d6-b737-4c0c-9c63-d10b161f2054" name="Changes" comment="" />
+    <list default="true" id="630b91d6-b737-4c0c-9c63-d10b161f2054" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/Chart.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/charts/common-2.13.3.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/extra-list.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/metrics-svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/networkpolicy.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/primary/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/primary/initialization-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/primary/pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/primary/startdb-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/primary/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/primary/svc-headless.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/primary/svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/prometheusrule.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/role.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/rolebinding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/secondary/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/secondary/pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/secondary/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/secondary/svc-headless.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/secondary/svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/secrets.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/templates/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/values.schema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/accountsdb/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/Chart.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/charts/common-2.13.3.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/extra-list.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/metrics-svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/networkpolicy.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/primary/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/primary/initialization-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/primary/pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/primary/startdb-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/primary/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/primary/svc-headless.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/primary/svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/prometheusrule.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/role.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/rolebinding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/secondary/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/secondary/pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/secondary/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/secondary/svc-headless.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/secondary/svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/secrets.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/templates/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/values.schema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/cardsdb/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/environments/dev-env/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/environments/dev-env/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/environments/dev-env/templates/configmap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/environments/dev-env/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/environments/prod-env/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/environments/prod-env/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/environments/prod-env/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/environments/qa-env/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/environments/qa-env/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/environments/qa-env/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/Chart.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/charts/common-2.13.3.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/charts/memcached-6.7.0.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/compactor/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/compactor/pvc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/compactor/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/compactor/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/distributor/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/distributor/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/distributor/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/extra-list.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/gateway/configmap-http.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/gateway/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/gateway/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/gateway/secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/gateway/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/gateway/tls-secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/gossip-ring-headless-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/index-gateway/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/index-gateway/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/index-gateway/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/ingester/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/ingester/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/ingester/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/loki-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/promtail/clusterrole.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/promtail/clusterrolebinding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/promtail/daemonset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/promtail/secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/promtail/service-account.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/promtail/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/promtail/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/querier/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/querier/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/querier/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/query-frontend/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/query-frontend/headless-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/query-frontend/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/query-frontend/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/query-scheduler/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/query-scheduler/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/ruler/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/ruler/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/ruler/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/service-account.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/table-manager/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/table-manager/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/templates/table-manager/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-loki/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/Chart.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/charts/common-2.13.3.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/charts/memcached-6.7.1.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/compactor/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/compactor/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/compactor/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/distributor/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/distributor/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/distributor/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/extra-list.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/gossip-ring-headless-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/ingester/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/ingester/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/ingester/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/metrics-generator/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/metrics-generator/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/metrics-generator/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/overrides-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/querier/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/querier/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/querier/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/query-frontend/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/query-frontend/headless-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/query-frontend/query-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/query-frontend/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/query-frontend/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/service-account.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/tempo-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/vulture/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/vulture/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/templates/vulture/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/test.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana-tempo/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/Chart.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/charts/common-2.13.3.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/dashboard-provider.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/datasources-secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/extra-list.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/ldap-secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/prometheusrules.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/pvc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/smtp-secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/templates/tls-secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/grafana/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/Chart.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/charts/common-2.13.3.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/charts/zookeeper-12.3.2.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/broker/config-secrets.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/broker/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/broker/pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/broker/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/broker/svc-external-access.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/broker/svc-headless.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/controller-eligible/config-secrets.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/controller-eligible/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/controller-eligible/pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/controller-eligible/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/controller-eligible/svc-external-access.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/controller-eligible/svc-headless.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/extra-list.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/log4j-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/metrics/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/metrics/jmx-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/metrics/jmx-servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/metrics/jmx-svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/metrics/prometheusrule.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/metrics/serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/metrics/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/metrics/svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/network-policy/networkpolicy-egress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/network-policy/networkpolicy-ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/provisioning/job.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/provisioning/serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/provisioning/tls-secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/rbac/role.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/rbac/rolebinding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/rbac/serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/scripts-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/secrets.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/templates/tls-secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kafka/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/Chart.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/charts/common-2.13.3.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/charts/postgresql-13.2.14.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/configmap-env-vars.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/extra-list.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/headless-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/hpa.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/init-scripts-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/keycloak-config-cli-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/keycloak-config-cli-job.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/metrics-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/networkpolicy.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/prometheusrule.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/role.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/rolebinding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/secret-external-db.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/secrets.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/tls-pass-secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/templates/tls-secret.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/keycloak/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/Chart.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/charts/common-2.13.3.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/charts/kube-state-metrics-3.8.4.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/charts/node-exporter-3.9.4.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/crds/crd-alertmanagerconfigs.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/crds/crd-alertmanagers.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/crds/crd-podmonitors.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/crds/crd-probes.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/crds/crd-prometheusagents.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/crds/crd-prometheuses.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/crds/crd-prometheusrules.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/crds/crd-scrapeconfigs.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/crds/crd-servicemonitors.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/crds/crd-thanosrulers.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/hack/update_crds.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/alertmanager/alertmanager.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/alertmanager/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/alertmanager/pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/alertmanager/psp-clusterrole.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/alertmanager/psp-clusterrolebinding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/alertmanager/psp.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/alertmanager/secrets.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/alertmanager/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/alertmanager/serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/alertmanager/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/alertmanager/tls-secrets.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/blackbox-exporter/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/blackbox-exporter/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/blackbox-exporter/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/blackbox-exporter/serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/exporters/core-dns/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/exporters/core-dns/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/exporters/kube-apiserver/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/exporters/kube-controller-manager/endpoints.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/exporters/kube-controller-manager/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/exporters/kube-controller-manager/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/exporters/kube-proxy/endpoints.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/exporters/kube-proxy/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/exporters/kube-proxy/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/exporters/kube-scheduler/endpoints.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/exporters/kube-scheduler/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/exporters/kube-scheduler/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/exporters/kubelet/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/extra-list.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus-operator/clusterrole.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus-operator/clusterrolebinding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus-operator/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus-operator/deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus-operator/psp-clusterrole.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus-operator/psp-clusterrolebinding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus-operator/psp.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus-operator/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus-operator/serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus-operator/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/additionalPrometheusRules.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/additionalScrapeJobs.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/clusterrole.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/clusterrolebinding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/config-reloader-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/config-reloader-servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/prometheus.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/psp-clusterrole.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/psp-clusterrolebinding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/psp.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/thanos-ingress.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/thanos-service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/templates/prometheus/tls-secrets.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/kube-prometheus/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/Chart.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/charts/common-2.13.3.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/NOTES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/_helpers.tpl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/extra-list.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/metrics-svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/networkpolicy.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/primary/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/primary/initialization-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/primary/pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/primary/startdb-configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/primary/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/primary/svc-headless.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/primary/svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/prometheusrule.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/role.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/rolebinding.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/secondary/configmap.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/secondary/pdb.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/secondary/statefulset.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/secondary/svc-headless.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/secondary/svc.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/secrets.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/serviceaccount.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/templates/servicemonitor.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/values.schema.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/loansdb/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-common/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-common/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-common/templates/configmap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-common/templates/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-common/templates/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-common/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/accounts/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/accounts/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/accounts/charts/sbbank-common-0.1.0.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/accounts/templates/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/accounts/templates/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/accounts/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/cards/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/cards/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/cards/charts/sbbank-common-0.1.0.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/cards/templates/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/cards/templates/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/cards/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/configserver/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/configserver/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/configserver/charts/sbbank-common-0.1.0.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/configserver/templates/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/configserver/templates/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/configserver/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/eurekaserver/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/eurekaserver/Chart.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/eurekaserver/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/eurekaserver/charts/sbbank-common-0.1.0.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/eurekaserver/templates/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/eurekaserver/templates/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/eurekaserver/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/gatewayserver/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/gatewayserver/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/gatewayserver/charts/sbbank-common-0.1.0.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/gatewayserver/templates/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/gatewayserver/templates/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/gatewayserver/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/loans/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/loans/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/loans/charts/sbbank-common-0.1.0.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/loans/templates/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/loans/templates/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/loans/values.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/message/.helmignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/message/Chart.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/message/charts/sbbank-common-0.1.0.tgz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/message/templates/deployment.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/message/templates/service.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helm-k8s-dicoveryserver/sbbank-services/message/values.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/sbbank/accounts/AccountsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/sbbank/accounts/AccountsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/sbbank/accounts/service/client/CardsFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/sbbank/accounts/service/client/CardsFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/java/com/sbbank/accounts/service/client/LoansFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/java/com/sbbank/accounts/service/client/LoansFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/java/com/sbbank/cards/CardsApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/java/com/sbbank/cards/CardsApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cards/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/cards/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayserver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/java/com/sbBank/gatewayserver/GatewayserverApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/java/com/sbBank/gatewayserver/GatewayserverApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gatewayserver/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/java/com/sbbank/loans/LoansApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/java/com/sbbank/loans/LoansApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loans/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/loans/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,21 +468,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/shouravbhattarai/Desktop/ microservices/sbBank&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "k8s-server-discovery",
+    "last_opened_file_path": "/Users/shouravbhattarai/Desktop/ microservices/sbBank",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/configserver/src/main/resources/config" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -62,7 +495,7 @@
       <recent name="com.sbbank.cards.dto" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.GatewayserverApplication">
+  <component name="RunManager" selected="Application.AccountsApplication">
     <configuration name="AccountsApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sbbank.accounts.AccountsApplication" />
       <module name="accounts" />

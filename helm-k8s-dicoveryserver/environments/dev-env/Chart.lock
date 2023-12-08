@@ -1,0 +1,24 @@
+dependencies:
+- name: sbbank-common
+  repository: file://../../sbbank-common
+  version: 0.1.0
+- name: configserver
+  repository: file://../../sbbank-services/configserver
+  version: 0.1.0
+- name: accounts
+  repository: file://../../sbbank-services/accounts
+  version: 0.1.0
+- name: cards
+  repository: file://../../sbbank-services/cards
+  version: 0.1.0
+- name: loans
+  repository: file://../../sbbank-services/loans
+  version: 0.1.0
+- name: gatewayserver
+  repository: file://../../sbbank-services/gatewayserver
+  version: 0.1.0
+- name: message
+  repository: file://../../sbbank-services/message
+  version: 0.1.0
+digest: sha256:2aec400630f017566b70d7ea7fba58a9497e9238d1edb17db39e99bd864c0279
+generated: "2023-12-07T14:00:42.869667-08:00"

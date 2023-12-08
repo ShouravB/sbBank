@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.validation.constraints.Pattern;
 
-@FeignClient(name="loans",fallback = LoansFallback.class)
+@FeignClient(name="loans",url = "http://loans:8090",fallback = LoansFallback.class)
 public interface LoansFeignClient {
 
     @GetMapping("/api/v1/fetch")

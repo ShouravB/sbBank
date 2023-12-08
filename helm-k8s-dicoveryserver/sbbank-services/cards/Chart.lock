@@ -1,0 +1,6 @@
+dependencies:
+- name: sbbank-common
+  repository: file://../../sbbank-common
+  version: 0.1.0
+digest: sha256:d5be74e08112387063fc9c17e72e1617aea1f0fddeb820e968c06e3e11c91950
+generated: "2023-12-07T13:37:48.899674-08:00"

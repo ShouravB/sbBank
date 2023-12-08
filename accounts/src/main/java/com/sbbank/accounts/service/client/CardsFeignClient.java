@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import javax.validation.Valid;
 import javax.validation.constraints.Pattern;
 
-@FeignClient(name = "cards",fallback = CardsFallback.class)
+@FeignClient(name = "cards",url = "http://cards:8095",fallback = CardsFallback.class)
 public interface CardsFeignClient {
 
     @GetMapping(value="/api/v1/fetch", consumes = "application/json")
